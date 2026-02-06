@@ -2,9 +2,14 @@
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "dev-secret-key-change-me"
-DEBUG = False
-ALLOWED_HOSTS = ["abcd-o0gs.onrender.com", ".onrender.com", "localhost", "127.0.0.1"]
+import os
+
+SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-key-change-me")
+DEBUG = os.getenv("DEBUG", "false").lower() == "true"
+ALLOWED_HOSTS = os.getenv(
+    "ALLOWED_HOSTS",
+    "abcd-o0gs.onrender.com,.onrender.com,localhost,127.0.0.1",
+).split(",")
 
 INSTALLED_APPS = [
     "django.contrib.contenttypes",
