@@ -1,0 +1,50 @@
+﻿{% extends "cards/base.html" %}
+{% block content %}
+<section class="card-container">
+  <div class="card-header">
+    <div class="card-chip">Reasons I Love You</div>
+    <div class="card-title">Every detail matters</div>
+    <div class="card-subtitle">A list from my heart</div>
+  </div>
+
+  <div class="message-text">
+    My Dearest {{ recipient }},
+    <br><br>
+    If I were to list all the reasons I love you, we'd be here forever. Here are just a few
+    that make my heart overflow with love for you:
+  </div>
+
+  <div class="love-grid">
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Your beautiful soul</strong> - the kindness you show to everyone around you.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Your radiant smile</strong> - it brightens my day every single time.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Your intelligence</strong> - the way you think and see the world amazes me.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Your strength</strong> - how you face challenges with grace inspires me.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Your humor</strong> - the laughter we share is a gift.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Your gentleness</strong> - the tender way you care for others.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Your passion</strong> - the enthusiasm you bring to everything you do.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Your love</strong> - the way you love me makes me feel so lucky.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Your dreams</strong> - I love supporting you as you grow.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Simply you</strong> - you are perfect just as you are.</div></div>
+  </div>
+
+  <div class="quote-box">
+    "I love you not only for what you are, but for what I am when I am with you.
+    You make me the best version of myself."
+  </div>
+
+  <div class="message-text">
+    I respect you, I cherish you, I care for you, and I love you with all my heart.
+    Thank you for being mine.
+  </div>
+
+  <div class="quote-divider">❤️ 💕 ❤️</div>
+
+  <div class="signature-line">
+    <div>
+      <div class="signature">{{ sender }}</div>
+      <div class="signature-note">aka {{ sender_nick }}</div>
+    </div>
+    <div class="date-text">Happy Valentine's Day {{ valentine_year }}</div>
+  </div>
+</section>
+{% endblock %}

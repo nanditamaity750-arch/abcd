@@ -1,0 +1,50 @@
+﻿{% extends "cards/base.html" %}
+{% block content %}
+<section class="card-container">
+  <div class="card-header">
+    <div class="card-chip">Heartfelt Poem</div>
+    <div class="card-title">My Darling Valentine</div>
+    <div class="card-subtitle">Every line is for you</div>
+  </div>
+
+  <div class="message-text">
+    In your eyes, I see my home,<br>
+    A place where I'm never alone.<br>
+    Your smile lights up my darkest night,<br>
+    With you, everything feels so right.<br><br>
+    Your touch is gentle, warm, and true,<br>
+    Every day I fall deeper for you.<br>
+    Your voice, a melody so sweet,<br>
+    Makes my world feel so complete.<br><br>
+    I respect the woman you've become,<br>
+    So strong, so bright, second to none.<br>
+    {{ memory }} stays close, a treasured part,<br>
+    Forever written in my heart.<br><br>
+    You're my partner, my lover, my best friend,<br>
+    My forever, until the very end.
+  </div>
+
+  <div class="quote-box">
+    "Love is not just looking at each other, it's looking in the same direction.
+    And with you, my love, I see a beautiful future ahead."
+  </div>
+
+  <div class="section-title">You Are My</div>
+  <div class="love-grid">
+    <div class="love-item"><span class="love-icon">💗</span><div>Joy on ordinary days.</div></div>
+    <div class="love-item"><span class="love-icon">💗</span><div>Inspiration to be better.</div></div>
+    <div class="love-item"><span class="love-icon">💗</span><div>Greatest blessing and calm.</div></div>
+    <div class="love-item"><span class="love-icon">💗</span><div>Home in every season.</div></div>
+  </div>
+
+  <div class="quote-divider">💗 ❤️ 💗</div>
+
+  <div class="signature-line">
+    <div>
+      <div class="signature">{{ sender }}</div>
+      <div class="signature-note">aka {{ sender_nick }}</div>
+    </div>
+    <div class="date-text">Valentine's Day {{ valentine_year }}</div>
+  </div>
+</section>
+{% endblock %}

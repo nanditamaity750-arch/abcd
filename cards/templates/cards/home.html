@@ -1,0 +1,45 @@
+﻿{% extends "cards/base.html" %}
+{% block content %}
+<section class="card-container">
+  <div class="card-header">
+    <div class="card-chip">Welcome</div>
+    <div class="card-title">Choose Your Card</div>
+    <div class="card-subtitle">A page for every love story</div>
+  </div>
+
+  <div class="message-text">
+    Pick a style below to open a dedicated page. Each card is crafted for {{ recipient }}.
+  </div>
+
+  <div class="home-grid">
+    <a class="home-card" href="{% url 'romantic_letter' %}">
+      <h3>Romantic Letter</h3>
+      <p>Classic, heartfelt, timeless.</p>
+    </a>
+    <a class="home-card" href="{% url 'love_declaration' %}">
+      <h3>Love Declaration</h3>
+      <p>Bold and devoted.</p>
+    </a>
+    <a class="home-card" href="{% url 'heartfelt_poem' %}">
+      <h3>Heartfelt Poem</h3>
+      <p>Poetry for the soul.</p>
+    </a>
+    <a class="home-card" href="{% url 'reasons_i_love_you' %}">
+      <h3>Reasons I Love You</h3>
+      <p>All the little things.</p>
+    </a>
+    <a class="home-card" href="{% url 'promise_ring' %}">
+      <h3>Promise Ring</h3>
+      <p>A vow in words.</p>
+    </a>
+    <a class="home-card" href="{% url 'starlit_vows' %}">
+      <h3>Starlit Vows</h3>
+      <p>Written under the stars.</p>
+    </a>
+    <a class="home-card" href="{% url 'our_love_story' %}">
+      <h3>Our Love Story</h3>
+      <p>Chapters of us.</p>
+    </a>
+  </div>
+</section>
+{% endblock %}

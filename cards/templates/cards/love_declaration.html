@@ -1,0 +1,48 @@
+﻿{% extends "cards/base.html" %}
+{% block content %}
+<section class="card-container">
+  <div class="card-header">
+    <div class="card-chip">Love Declaration</div>
+    <div class="card-title">To {{ recipient }}</div>
+    <div class="card-subtitle">A promise of always</div>
+  </div>
+
+  <div class="message-text">
+    My Love,
+    <br><br>
+    Loving you is the most natural thing I have ever done. You have transformed my world
+    in the most beautiful ways imaginable, and I want you to feel that devotion every day.
+  </div>
+
+  <div class="section-title">My Love For You Is</div>
+  <div class="love-grid">
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Infinite</strong> - it knows no bounds or limits.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Unconditional</strong> - it accepts you completely, just as you are.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Eternal</strong> - it will last through all of time.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Pure</strong> - it comes from the deepest part of my heart.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Passionate</strong> - it burns brighter with each passing day.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>Gentle</strong> - it handles your heart with care and tenderness.</div></div>
+  </div>
+
+  <div class="quote-box">
+    "You are my sun, my moon, and all my stars. You are the dream I never want to wake up from."
+  </div>
+
+  <div class="message-text">
+    I respect you for your intelligence, your compassion, your strength, and your grace.
+    I care for you deeply, wanting nothing more than your happiness and wellbeing.
+    You deserve all the love, respect, and care in the world, and I promise to give you
+    exactly that - every single day.
+  </div>
+
+  <div class="quote-divider">💖 💕 💖</div>
+
+  <div class="signature-line">
+    <div>
+      <div class="signature">{{ sender }}</div>
+      <div class="signature-note">aka {{ sender_nick }}</div>
+    </div>
+    <div class="date-text">With love on Valentine's Day {{ valentine_year }}</div>
+  </div>
+</section>
+{% endblock %}

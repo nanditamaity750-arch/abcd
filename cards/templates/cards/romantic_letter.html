@@ -1,0 +1,51 @@
+﻿{% extends "cards/base.html" %}
+{% block content %}
+<section class="card-container">
+  <div class="card-header">
+    <div class="card-chip">Romantic Letter</div>
+    <div class="card-title">My Darling {{ recipient_nick }}</div>
+    <div class="card-subtitle">From my heart to yours</div>
+  </div>
+
+  <div class="message-text">
+    Dear {{ recipient_display }},
+    <br><br>
+    As Valentine's Day arrives, my heart overflows with emotions that words can barely capture.
+    You are the sunshine that brightens my darkest days, the melody in my life's symphony,
+    and the reason I believe in magic. {{ memory }} still makes me smile.
+    <br><br>
+    Every moment with you is a precious gift. Your smile melts my heart, your laughter is music
+    to my ears, and your love is the greatest blessing I have ever known. You make ordinary days
+    extraordinary and fill my life with colors I never knew existed.
+  </div>
+
+  <div class="quote-box">
+    "In you, I've found the love of my life and my closest, truest friend.
+    You are my today and all of my tomorrows."
+  </div>
+
+  <div class="section-title">Promises</div>
+  <div class="love-grid">
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>You are cherished</strong> - beyond measure, beyond words, beyond time.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>You are respected</strong> - for your strength, your kindness, your beautiful soul.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>You are loved</strong> - completely, unconditionally, eternally.</div></div>
+    <div class="love-item"><span class="love-icon">💖</span><div><strong>You are my everything</strong> - my partner, my best friend, my forever.</div></div>
+  </div>
+
+  <div class="message-text">
+    Thank you for being you. Thank you for choosing me. Thank you for loving me.
+    I promise to treasure you, honor you, and love you with all that I am,
+    today and always. And I will keep dreaming of {{ future }} with you.
+  </div>
+
+  <div class="quote-divider">❤️ 💗 ❤️</div>
+
+  <div class="signature-line">
+    <div>
+      <div class="signature">{{ sender }}</div>
+      <div class="signature-note">aka {{ sender_nick }}</div>
+    </div>
+    <div class="date-text">Valentine's Day {{ valentine_year }}</div>
+  </div>
+</section>
+{% endblock %}

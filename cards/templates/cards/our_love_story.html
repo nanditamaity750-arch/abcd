@@ -1,0 +1,56 @@
+﻿{% extends "cards/base.html" %}
+{% block content %}
+<section class="card-container">
+  <div class="card-header">
+    <div class="card-chip">Our Love Story</div>
+    <div class="card-title">Chapters of us</div>
+    <div class="card-subtitle">A story still unfolding</div>
+  </div>
+
+  <div class="message-text">
+    My Beautiful {{ recipient }},
+    <br><br>
+    Our love story is my favorite story to tell. From the moment we met,
+    I knew there was something special about you - something that would change my life forever.
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-title">Chapter 1: The Beginning</div>
+      <div class="timeline-text">When our paths first crossed, I felt the spark that would guide us.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-title">Chapter 2: Falling Deeper</div>
+      <div class="timeline-text">Every conversation drew me closer. {{ memory }} is one of my favorite moments.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-title">Chapter 3: Growing Together</div>
+      <div class="timeline-text">Through joys and challenges, we've grown together with trust and kindness.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-title">Chapter 4: Forever</div>
+      <div class="timeline-text">I see {{ future }} and a lifetime of love ahead for us.</div>
+    </div>
+  </div>
+
+  <div class="message-text">
+    I love you with a love that is more than love. I respect every part of who you are.
+    I care deeply about your happiness, your dreams, your wellbeing. You are my heart,
+    my soul, my everything.
+  </div>
+
+  <div class="quote-divider">💞 To be continued... forever 💞</div>
+
+  <div class="signature-line">
+    <div>
+      <div class="signature">{{ sender }}</div>
+      <div class="signature-note">aka {{ sender_nick }}</div>
+    </div>
+    <div class="date-text">Valentine's Day {{ valentine_year }}</div>
+  </div>
+</section>
+{% endblock %}

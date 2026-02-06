@@ -1,0 +1,38 @@
+﻿{% extends "cards/base.html" %}
+{% block content %}
+<section class="card-container">
+  <div class="card-header">
+    <div class="card-chip">Promise Ring</div>
+    <div class="card-title">A Promise to {{ recipient }}</div>
+    <div class="card-subtitle">My vow, always</div>
+  </div>
+
+  <div class="message-text">
+    Today, I want to make a promise that lives in every beat of my heart. I promise to keep
+    choosing you, to show up with patience, to listen with care, and to love you with every
+    part of who I am.
+  </div>
+
+  <div class="section-title">My Promises</div>
+  <div class="love-grid">
+    <div class="love-item"><span class="love-icon">💞</span><div><strong>To protect your peace</strong> - I will always be your safe place.</div></div>
+    <div class="love-item"><span class="love-icon">💞</span><div><strong>To celebrate your wins</strong> - big and small, I will cheer for you.</div></div>
+    <div class="love-item"><span class="love-icon">💞</span><div><strong>To grow together</strong> - in kindness, patience, and joy.</div></div>
+    <div class="love-item"><span class="love-icon">💞</span><div><strong>To love you openly</strong> - every day, in every season.</div></div>
+  </div>
+
+  <div class="quote-box">
+    "I choose you, and I will keep choosing you, again and again, without pause."
+  </div>
+
+  <div class="quote-divider">💞 ❤️ 💞</div>
+
+  <div class="signature-line">
+    <div>
+      <div class="signature">{{ sender }}</div>
+      <div class="signature-note">aka {{ sender_nick }}</div>
+    </div>
+    <div class="date-text">Promised on Valentine's Day {{ valentine_year }}</div>
+  </div>
+</section>
+{% endblock %}

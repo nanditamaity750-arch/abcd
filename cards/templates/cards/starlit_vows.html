@@ -1,0 +1,37 @@
+﻿{% extends "cards/base.html" %}
+{% block content %}
+<section class="card-container">
+  <div class="card-header">
+    <div class="card-chip">Starlit Vows</div>
+    <div class="card-title">Under the Same Stars</div>
+    <div class="card-subtitle">Forever written in the sky</div>
+  </div>
+
+  <div class="message-text">
+    Under every sky, I see you. In every future I dream, I see us. I want a life filled with
+    {{ future }}, and I want to build it with you, hand in hand.
+  </div>
+
+  <div class="section-title">Tonight I Vow</div>
+  <div class="love-grid">
+    <div class="love-item"><span class="love-icon">🌟</span><div><strong>To be your constant</strong> - a steady light when days are dim.</div></div>
+    <div class="love-item"><span class="love-icon">🌟</span><div><strong>To honor your heart</strong> - with respect, tenderness, and care.</div></div>
+    <div class="love-item"><span class="love-icon">🌟</span><div><strong>To keep the romance</strong> - in the little moments and the big ones.</div></div>
+    <div class="love-item"><span class="love-icon">🌟</span><div><strong>To stay grateful</strong> - for every day I get to love you.</div></div>
+  </div>
+
+  <div class="quote-box">
+    "Some infinities are bigger than other infinities, and ours is my favorite."
+  </div>
+
+  <div class="quote-divider">🌟 💗 🌟</div>
+
+  <div class="signature-line">
+    <div>
+      <div class="signature">{{ sender }}</div>
+      <div class="signature-note">aka {{ sender_nick }}</div>
+    </div>
+    <div class="date-text">Valentine's Night {{ valentine_year }}</div>
+  </div>
+</section>
+{% endblock %}
