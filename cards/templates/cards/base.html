@@ -88,9 +88,11 @@
 
   <footer class="footer">Made with love • {{ today_label }}</footer>
 
-  <audio id="bg-audio" loop>
-    <source src="{% static 'cards/music/Phir Aur Kya Chahiye(KoshalWorld.Com).mp3' %}" type="audio/mpeg">
-  </audio>
+  <div class="audio-player">
+    <audio id="bg-audio" loop controls>
+      <source src="{% static 'cards/music/Phir Aur Kya Chahiye(KoshalWorld.Com).mp3' %}" type="audio/mpeg">
+    </audio>
+  </div>
 
   <script src="{% static 'cards/js/app.js' %}"></script>
 </body>

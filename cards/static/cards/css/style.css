@@ -258,6 +258,16 @@ body[data-theme="ocean"] {
   margin-bottom: 2rem;
 }
 
+.audio-player {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto 2rem;
+}
+
+.audio-player audio {
+  width: min(720px, 100%);
+}
+
 .quote-box {
   background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.4));
   border: 1px dashed var(--accent);
