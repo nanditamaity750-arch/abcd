@@ -3,8 +3,8 @@
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "dev-secret-key-change-me"
-DEBUG = True
-ALLOWED_HOSTS = ["*"]
+DEBUG = False
+ALLOWED_HOSTS = ["abcd-o0gs.onrender.com", ".onrender.com", "localhost", "127.0.0.1"]
 
 INSTALLED_APPS = [
     "django.contrib.contenttypes",
@@ -14,6 +14,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.middleware.common.CommonMiddleware",
 ]
 
@@ -43,5 +44,8 @@ USE_TZ = False
 
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [BASE_DIR / "cards" / "static"]
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
